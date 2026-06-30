@@ -69,9 +69,9 @@
             backdrop-filter: blur(10px);
         }
 
-        /* Título Sem Erros e com Amarelo Destacado */
+        /* Bloco do Título 100% Corrigido */
         .header-brand {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
 
         .header-brand .sub-brand {
@@ -93,20 +93,20 @@
             letter-spacing: -0.5px;
         }
 
-        /* Destaque Amarelo Exclusivo solicitado */
+        /* Texto Amarelo Sem Erros e Sem a palavra "COM" */
         .header-brand .texto-amarelo {
             display: block;
-            font-size: 19px;
+            font-size: 20px;
             color: var(--neon-yellow);
-            font-weight: 800;
-            margin-top: 8px;
+            font-weight: 900;
+            margin-top: 10px;
             letter-spacing: 0.5px;
-            text-shadow: 0 0 10px rgba(255, 234, 0, 0.3);
+            text-shadow: 0 0 15px rgba(255, 234, 0, 0.4);
         }
 
         /* SUPER CTA WHATSAPP PULSANTE */
         .cta-box-wrapper {
-            margin-bottom: 24px;
+            margin-bottom: 30px;
         }
 
         .btn-whats-premium {
@@ -118,9 +118,9 @@
             background: linear-gradient(180deg, #00ff4c 0%, #009c2e 100%);
             color: #ffffff;
             text-decoration: none;
-            padding: 20px;
+            padding: 22px 20px;
             border-radius: 50px;
-            font-size: 18px;
+            font-size: 19px;
             font-weight: 900;
             text-transform: uppercase;
             box-shadow: 0 0 35px rgba(0, 255, 76, 0.6);
@@ -134,12 +134,12 @@
             100% { transform: scale(1); }
         }
 
-        /* Bloco de Oferta com Globoplay Embutido do Lado Direito */
+        /* Bloco de Oferta com Globoplay do Lado Direito */
         .oferta-flex-container {
             display: flex;
             align-items: center;
             gap: 12px;
-            margin-bottom: 24px;
+            margin-bottom: 28px;
         }
 
         .oferta-card-premium {
@@ -147,7 +147,7 @@
             background: rgba(4, 9, 26, 0.9);
             border: 2px solid #143575;
             border-radius: 24px;
-            padding: 20px 15px;
+            padding: 22px 15px;
             position: relative;
             overflow: hidden;
             box-shadow: inset 0 0 20px rgba(0, 153, 255, 0.15);
@@ -192,9 +192,9 @@
             color: #a4b3cd;
         }
 
-        /* Card Destaque Globoplay do Lado Direito */
+        /* Globoplay do Lado Direito */
         .badge-globoplay-direito {
-            width: 110px;
+            width: 115px;
             align-self: stretch;
             background: linear-gradient(135deg, #ff4500 0%, #ff0044 100%);
             border-radius: 24px;
@@ -211,12 +211,6 @@
             font-size: 28px;
             color: #ffffff;
             margin-bottom: 8px;
-            animation: pulseIcon 2s infinite alternate;
-        }
-
-        @keyframes pulseIcon {
-            0% { transform: scale(1); }
-            100% { transform: scale(1.15); }
         }
 
         .badge-globoplay-text {
@@ -232,18 +226,18 @@
             font-size: 10px;
             font-weight: 700;
             color: rgba(255, 255, 255, 0.85);
-            margin-top: 2px;
+            margin-top: 4px;
             background: rgba(0, 0, 0, 0.2);
             padding: 2px 6px;
             border-radius: 10px;
         }
 
-        /* Recursos e Benefícios */
+        /* Benefícios */
         .grid-recursos {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
-            margin-bottom: 24px;
+            margin-bottom: 28px;
         }
 
         .recurso-tag {
@@ -264,7 +258,7 @@
             color: var(--accent-blue);
         }
 
-        /* Formulário de Verificação */
+        /* Formulário de Endereço */
         .secao-busca-titulo {
             font-size: 13px;
             font-weight: 700;
@@ -315,7 +309,7 @@
 </head>
 <body>
 
-    <!-- AVISO COM GATILHO DE MÁXIMA URGÊNCIA -->
+    <!-- BARRA DE URGÊNCIA -->
     <div class="top-bar-urgente">
         <i class="fas fa-bolt"></i> Instalação Grátis Disponível Apenas Para Hoje!
     </div>
@@ -323,30 +317,28 @@
     <div class="main-wrapper">
         <div class="container">
             
-            <!-- TITULO TOTALMENTE CORRIGIDO E ATUALIZADO -->
+            <!-- CABEÇALHO CORRIGIDO -->
             <div class="header-brand">
                 <span class="sub-brand">INTERNET FIBRA ÓPTICA</span>
                 <h1 class="main-name">CONSULTE COBERTURA FIBRA</h1>
                 <span class="texto-amarelo">DISPONÍVEL EM TODO O BRASIL</span>
             </div>
 
-            <!-- BOTÃO DE WHATSAPP PRINCIPAL -->
+            <!-- BOTÃO PRINCIPAL DO WHATSAPP -->
             <div class="cta-box-wrapper">
                 <a href="https://wa.me/554140428928?text=Quero%20aproveitar%20a%20oferta%20de%20500%20MEGA%20com%20Globoplay%20e%20consultar%20disponibilidade!" class="btn-whats-premium" target="_blank">
                     <i class="fab fa-whatsapp" style="font-size: 24px;"></i> CONSULTAR NO WHATSAPP
                 </a>
             </div>
 
-            <!-- CONTEINER FLEX: OFERTA + GLOBO PLAY INCLUSO DO LADO DIREITO -->
+            <!-- CONTAINER DA OFERTA + GLOBOPLAY -->
             <div class="oferta-flex-container">
-                <!-- Card com o Preço -->
                 <div class="oferta-card-premium">
                     <div class="display-mega">500</div>
                     <div class="display-submega">MEGA</div>
                     <div class="preco-tag-principal"><span>R$</span>90<small>/mês</small></div>
                 </div>
                 
-                <!-- Destaque do Lado Direito: Globo Play Incluso -->
                 <div class="badge-globoplay-direito">
                     <i class="fas fa-tv"></i>
                     <div class="badge-globoplay-text">Globo<br>Play</div>
@@ -360,7 +352,7 @@
                 <div class="recurso-tag"><i class="fas fa-bolt"></i> ULTRA WI-FI 6</div>
             </div>
 
-            <!-- CONSULTA SECUNDÁRIA DE ENDEREÇO -->
+            <!-- FORMULÁRIO DE ENDEREÇO -->
             <div class="secao-busca-titulo">Ou verifique seu endereço abaixo</div>
             <form id="formularioGeral">
                 <input type="text" id="campoEndereco" class="input-premium-endereco" placeholder="Digite seu CEP ou Cidade/Rua" required>
