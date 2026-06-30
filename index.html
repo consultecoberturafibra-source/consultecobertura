@@ -11,8 +11,10 @@
             --bg-color: #020512;
             --accent-blue: #0099ff;
             --neon-green: #00ff3c;
+            --neon-yellow: #ffcc00;
             --text-white: #ffffff;
             --glow-blue: 0 0 25px rgba(0, 153, 255, 0.7);
+            --glow-yellow: 0 0 20px rgba(255, 204, 0, 0.6);
         }
 
         * {
@@ -95,50 +97,9 @@
         .header-brand .main-name span {
             display: block;
             font-size: 20px;
-            color: var(--accent-blue);
-            text-shadow: var(--glow-blue);
+            color: var(--neon-yellow);
+            text-shadow: var(--glow-yellow);
             margin-top: 4px;
-        }
-
-        /* Roteador Futurista com Fundo IPv6 */
-        .router-image-container {
-            width: 100%;
-            max-width: 240px;
-            margin: 0 auto 20px auto;
-            position: relative;
-        }
-
-        /* Efeito de Brilho IPv6 no Fundo */
-        .router-image-container::before {
-            content: 'IPv6 READY';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 36px;
-            font-weight: 900;
-            font-style: italic;
-            color: rgba(0, 153, 255, 0.12);
-            letter-spacing: 2px;
-            text-shadow: 0 0 20px rgba(0, 153, 255, 0.6);
-            z-index: 0;
-            white-space: nowrap;
-        }
-
-        .router-image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-            position: relative;
-            z-index: 1;
-            filter: drop-shadow(0px 10px 25px rgba(0, 153, 255, 0.6));
-            animation: floatAnimation 3s infinite ease-in-out;
-        }
-
-        @keyframes floatAnimation {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-8px); }
-            100% { transform: translateY(0px); }
         }
 
         /* SUPER CTA WHATSAPP PULSANTE */
@@ -363,12 +324,7 @@
             <!-- TITULO CORRIGIDO COM SUCESSO -->
             <div class="header-brand">
                 <span class="sub-brand">INTERNET FIBRA ÓPTICA</span>
-                <h1 class="main-name">CONSULTE COBERTURA FIBRA <span>COM DISPONÍVEL EM TODO O BRASIL</span></h1>
-            </div>
-
-            <!-- IMAGEM DO ROTEADOR FUTURISTA + FUNDO NEON IPV6 -->
-            <div class="router-image-container">
-                <img src="https://i.postimg.cc/9Q6g7Yg6/router-wifi6.png" alt="Roteador Ultra Wifi 6" onerror="this.src='https://cdn-icons-png.flaticon.com/512/831/831276.png'">
+                <h1 class="main-name">CONSULTE COBERTURA FIBRA <span>DISPONÍVEL EM TODO O BRASIL</span></h1>
             </div>
 
             <!-- BOTÃO DE WHATSAPP PRINCIPAL -->
@@ -427,4 +383,3 @@
 
 </body>
 </html>
-`
