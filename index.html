@@ -129,18 +129,20 @@ margin-top:40px;
 .fixo{
 
 position:fixed;
+left:0;
+bottom:-120px;
+width:100%;
+padding:14px;
+background:#000;
+box-shadow:0 -5px 20px rgba(0,0,0,.4);
+transition:0.4s;
+z-index:999;
+
+}
+
+.fixo.mostrar{
 
 bottom:0;
-
-left:0;
-
-width:100%;
-
-padding:14px;
-
-background:#000;
-
-box-shadow:0 -5px 20px rgba(0,0,0,.4);
 
 }
 
@@ -240,6 +242,20 @@ R$ 90/mês
 </a>
 
 </div>
+<script>
 
+const botaoFixo = document.querySelector(".fixo");
+
+window.addEventListener("scroll", function(){
+
+    if(window.scrollY > 400){
+        botaoFixo.classList.add("mostrar");
+    }else{
+        botaoFixo.classList.remove("mostrar");
+    }
+
+});
+
+</script>
 </body>
 </html>
